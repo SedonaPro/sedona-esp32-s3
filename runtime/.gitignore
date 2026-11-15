@@ -22,7 +22,8 @@ src/sedona/src/version.txt
 
 kits/
 manifests/
-lib/
+lib/*
+!lib/sedona.properties
 platforms/db
 scode/*.scode
 
