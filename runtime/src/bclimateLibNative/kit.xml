@@ -1,0 +1,23 @@
+<sedonaKit
+    name="bclimateLibNative"
+    vendor="bclimate"
+    description="library with general useful native functions"
+    >
+
+  <depend on="sys 1.2+" />
+  <depend on="inet 1.2+" />
+  <depend on="bclimateLib 1.2+" />
+
+  <native qname="bclimateLibNative::ConvertFloat.Float2Int" id="104::1" />
+  <native qname="bclimateLibNative::ConvertFloat.Int2Float" id="104::2" />
+
+  <native qname="bclimateLibNative::SerialInfoPlatform.setMaxPortNumNative" id="104::3" />
+  <native qname="bclimateLibNative::SerialInfoPlatform.setPortNameNative" id="104::4" />
+
+  <native qname="bclimateLibNative::BclimateLicense.GetRequestString" id="104::10" />
+  <native qname="bclimateLibNative::BclimateLicense.IsLicenseAvailable" id="104::11" />
+  <native qname="bclimateLibNative::BclimateLicense.SubmitLicenseKey" id="104::12" />
+
+  <native qname="bclimateLibNative::NetworkConfig.checkNetConfig" id="104::15" />
+  <source dir="." />
+</sedonaKit>

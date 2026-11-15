@@ -1,0 +1,17 @@
+<sedonaKit
+    name="bclimateSpi"
+    vendor="bclimate"
+    description="library to work with SPI slave devices"
+    >
+
+  <depend on="sys 1.2+" />
+  <depend on="inet 1.2+" />
+  <depend on="bclimateLib 1.2+" />
+  <depend on="bclimateLibNative 1.2+" />
+
+  <native qname="bclimateSpi::SpiBaseApi.open"     id="105::0" />
+  <native qname="bclimateSpi::SpiBaseApi.close"    id="105::1" />
+  <native qname="bclimateSpi::SpiBaseApi.sendByte" id="105::2" />
+  <native qname="bclimateSpi::SpiBaseApi.initMode" id="105::3" />
+  <source dir="." />
+</sedonaKit>

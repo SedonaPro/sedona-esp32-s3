@@ -1,0 +1,5 @@
+- allow cross-compilation
+- add option to daemonize svm
+- add option to write pid file
+- extend inet class to bind only to local address
+- build SVM on amd64 (force int to be uint32_t)

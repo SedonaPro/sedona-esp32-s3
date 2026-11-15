@@ -1,0 +1,19 @@
+class StrMessage extends Message
+{
+  @asStr property Buf(Message.strLen) payload;
+  
+  override Str getPayload() { return payload.toStr() }
+  
+  override bool updateData(Obj handle) 
+  {
+    bool result = super.updateData(handle)
+    if (!result)
+      return result
+
+    payload.copyFromStr(strBuf)
+    payload.size = strBuf.length() + 1;
+    changed(StrMessage.payload)
+    return result
+  }
+}
+

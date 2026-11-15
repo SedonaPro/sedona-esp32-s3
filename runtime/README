@@ -1,0 +1,12 @@
+native kits numbers:
+
+communityMQTT: 50
+tutorial: 101
+bclimateModbusMaster: 102
+bclimateModbusSlave: 103
+bclimateLibNative: 104
+bclimateSpi: 105
+bclimateMath: 106
+bclimatePlatform: 107
+bclimateSqlite: 108
+bclimateExpression: 109

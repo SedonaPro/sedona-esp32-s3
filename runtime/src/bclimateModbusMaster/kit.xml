@@ -1,0 +1,35 @@
+<sedonaKit
+    name="bclimateModbusMaster"
+    vendor="bclimate"
+    description="Bclimate Modbus Master for RS485/232 and TCP/IP.
+  Component is used to get data from different Modbus slave devices">
+  <depend on="sys 1.2+" />
+  <depend on="inet 1.2+" />
+  <depend on="bclimateLib 1.2+" />
+  <depend on="bclimateLibNative 1.2+" />
+  <depend on="bclimateMath 1.2+" />
+
+
+  <native qname="bclimateModbusMaster::ModbusPoint.removeRegister"  				id="102::0" />
+  <native qname="bclimateModbusMaster::ModbusPoint.addRegister"  				id="102::1" />
+  <native qname="bclimateModbusMaster::ModbusPoint.updateRegisterInfo"  			id="102::2" />
+  <native qname="bclimateModbusMaster::ModbusPoint.requestInProgress"  				id="102::3" />
+  <native qname="bclimateModbusMaster::ModbusPoint.getDone"                                     id="102::4" />
+  <native qname="bclimateModbusMaster::ModbusPoint.setRequest"  				id="102::5" />
+  <native qname="bclimateModbusMaster::ModbusPoint.printInternalStateNative"			id="102::6" />
+
+  <native qname="bclimateModbusMaster::ModbusSlaveNetwork.setQuit"  				id="102::10" />
+  <native qname="bclimateModbusMaster::ModbusSlaveNetwork.getStatus" 				id="102::11" />
+  <native qname="bclimateModbusMaster::ModbusSlaveNetwork.setEnable" 				id="102::12" />
+  <native qname="bclimateModbusMaster::ModbusSlaveNetwork.printInternalStateNative"		id="102::13" />
+  <native qname="bclimateModbusMaster::ModbusSlaveNetwork.printInternalStateNativeAll"		id="102::14" />
+
+
+  <native qname="bclimateModbusMaster::ModbusSlaveTcpAsyncNetwork.addNetwork" 			id="102::20" />
+  <native qname="bclimateModbusMaster::ModbusSlaveTcpAsyncNetwork.updateTcpSettings" 		id="102::21" />
+
+  <native qname="bclimateModbusMaster::ModbusSlaveSerialAsyncNetwork.addNetwork"		id="102::30" />
+  <native qname="bclimateModbusMaster::ModbusSlaveSerialAsyncNetwork.updateSerialSettings" 	id="102::31" />
+
+  <source dir="." />
+</sedonaKit>

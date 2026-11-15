@@ -1,0 +1,15 @@
+<sedonaKit
+    name="bclimateExpression"
+    vendor="bclimate"
+    description="calculating floating and logical expressions">
+  <depend on="sys 1.2+" />
+
+  <native qname="bclimateExpression::ExpressionFloat.doParse"                      id="109::0"/>
+  <native qname="bclimateExpression::ExpressionFloat.doFree"                       id="109::1"/>
+  <native qname="bclimateExpression::ExpressionFloat.doCalc"                       id="109::2"/>
+  <native qname="bclimateExpression::ExpressionBool.doParse"                       id="109::3"/>
+  <native qname="bclimateExpression::ExpressionBool.doFree"                        id="109::4"/>
+  <native qname="bclimateExpression::ExpressionBool.doCalc"                        id="109::5"/>
+
+  <source dir="." />
+</sedonaKit>

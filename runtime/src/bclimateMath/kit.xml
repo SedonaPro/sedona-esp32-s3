@@ -1,0 +1,38 @@
+<sedonaKit
+    name="bclimateMath"
+    vendor="bclimate"
+    description="mathematical library"
+    >
+
+  <depend on="sys 1.2+" />
+
+  <native qname="bclimateMath::Math.arccos" id="106::1" />
+  <native qname="bclimateMath::Math.arcsin" id="106::2" />
+  <native qname="bclimateMath::Math.arctan" id="106::3" />
+  <native qname="bclimateMath::Math.arctan2" id="106::4" />
+  <native qname="bclimateMath::Math.ceil" id="106::5" />
+  <native qname="bclimateMath::Math.cos" id="106::6" />
+  <native qname="bclimateMath::Math.cosh" id="106::7" />
+  <native qname="bclimateMath::Math.exp" id="106::8" />
+  <!-- <native qname="bclimateMath::Math.fabs" id="106::9" /> -->
+  <native qname="bclimateMath::Math.floor" id="106::10" />
+  <native qname="bclimateMath::Math.fmod" id="106::11" />
+  <native qname="bclimateMath::Math.frexp" id="106::12" />
+  <native qname="bclimateMath::Math.ldexp" id="106::13" />  
+  <native qname="bclimateMath::Math.log" id="106::14" />
+  <native qname="bclimateMath::Math.log10" id="106::15" />
+  <native qname="bclimateMath::Math.modf" id="106::16" />
+  <native qname="bclimateMath::Math.pow" id="106::17" />
+  <native qname="bclimateMath::Math.sin" id="106::18" />
+  <native qname="bclimateMath::Math.sinh" id="106::19" />  
+  <native qname="bclimateMath::Math.sqrt" id="106::20" />
+  <native qname="bclimateMath::Math.tan" id="106::21" />
+  <native qname="bclimateMath::Math.tanh" id="106::22" />
+  <native qname="bclimateMath::Math.arccosh" id="106::23" />
+  <native qname="bclimateMath::Math.arcsinh" id="106::24" />
+  <native qname="bclimateMath::Math.arctanh" id="106::25" />
+  <native qname="bclimateMath::Math.cbrt" id="106::26" />  
+
+  <source dir="." />
+  <source dir="test" testonly="true"/>  
+</sedonaKit>

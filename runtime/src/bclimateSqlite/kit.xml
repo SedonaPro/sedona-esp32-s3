@@ -1,0 +1,16 @@
+<sedonaKit
+    name="bclimateSqlite"
+    vendor="bclimate"
+    description="components to save history logs and alarms in sqlite database">
+  <depend on="sys 1.2+" />
+  <depend on="bclimateMath 1.2+" />
+  <depend on="bclimateLib 1.2+" />
+
+  <native qname="bclimateSqlite::SqliteDb.doOpen"                       id="108::0" />
+  <native qname="bclimateSqlite::SqliteDb.doExecSql"                    id="108::1" />
+  <native qname="bclimateSqlite::SqliteDb.doExecInsertSql"              id="108::2" />
+  <native qname="bclimateSqlite::SqliteDb.doExecSelectSql"              id="108::3" />
+  <native qname="bclimateSqlite::SqliteDb.doClose"                      id="108::4" />
+
+  <source dir="." />
+</sedonaKit>

@@ -1,0 +1,53 @@
+<!--
+  -  Sedona Platform Manifest
+  -  Licensed under the Academic Free License version 3.0
+  -->
+
+<!-- DON'T FORGET TO REPLACE VENDOR to BCLIMATE -->
+<sedonaPlatform vendor="easyio" id="easyio-fg-sim-${sedona.env.version}">
+
+  <compile endian="little" blockSize="4" refSize="4" debug="true" test="true">
+
+    <!-- Native Kits -->
+    <nativeKit depend="sys 1.2+"    />
+    <nativeKit depend="inet 1.2+"   />
+    <nativeKit depend="datetimeStd 1.2+" />
+    <nativeKit depend="bclimatePlatform 1.2+" />
+    <nativeKit depend="bclimateMath 1.2+" />
+    <nativeKit depend="bclimateModbusMaster 1.2+" />
+    <nativeKit depend="bclimateModbusSlave 1.2+" />
+    <nativeKit depend="bclimateLibNative 1.2+" />
+    <nativeKit depend="bclimateSpi 1.2+" />
+    <nativeKit depend="bclimateSqlite 1.2+" />
+    <nativeKit depend="serial 1.2+" />
+
+    <!-- Sources -->
+    <nativeSource path="/src/vm" />
+    <nativeSource path="/src/sys/native" />
+    <nativeSource path="/src/sys/native/std" />
+    <nativeSource path="/src/sys/native/win32" />
+    <nativeSource path="/src/inet/native" />
+    <nativeSource path="/src/inet/native/std" />
+    <nativeSource path="/src/inet/native/sha1" />
+    <nativeSource path="/src/datetimeStd/native/std" />
+    <nativeSource path="/src/bclimateLibNative/native" />
+    <nativeSource path="/src/bclimateMath/native" />
+    <nativeSource path="/src/bclimateSqlite/native" />
+    <nativeSource path="/src/serial/native" />
+    <nativeSource path="/src/tutorial/native" />
+    <nativeSource path="/src/serial/native/win32" />
+    <nativeSource path="/src/bclimateModbusMaster/native/sim" />
+    <nativeSource path="/src/bclimateModbusSlave/native/sim" />
+    <nativeSource path="/src/bclimateSpi/native/sim" />
+
+  </compile>
+
+  <manifestInclude>
+    <schemes>
+      <!-- unix supports manifest, platform and kits transfer -->
+      <scheme id="m" transfer="single"/>
+      <scheme id="k" transfer="single"/>
+      <scheme id="p" transfer="single"/>
+    </schemes>
+  </manifestInclude>
+</sedonaPlatform>

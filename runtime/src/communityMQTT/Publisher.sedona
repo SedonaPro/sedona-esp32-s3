@@ -1,0 +1,8 @@
+class Publisher extends Worker
+{
+  override void doWork(MessageCommon m)
+  {
+    if (m != null)
+      m.publish(handle) 
+  }
+}

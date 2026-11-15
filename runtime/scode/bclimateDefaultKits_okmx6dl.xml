@@ -1,0 +1,50 @@
+<!--
+  -  Sedona SCode manifest for a generic unix platform
+  -->
+
+<sedonaCode
+   endian="little"
+   blockSize="4"
+   refSize="4"
+   main="sys::Sys.main"
+   debug="true"
+   test="true"
+>
+
+  <!-- Kits -->
+  <depend on="sys 1.2" />
+  <depend on="sox 1.2" />
+  <depend on="inet 1.2" />
+  <depend on="web 1.2" />
+  <depend on="serial 1.2" />
+  <depend on="control 1.2" />
+
+  <depend on="pstore 1.2" />
+  <depend on="datetime 1.2" />
+  <depend on="datetimeStd 1.2" />
+  <depend on="basicSchedule 1.2" />
+  <depend on="bclimatePlatform 1.2+" />
+  <depend on="bclimateMath 1.2+" />
+  <depend on="bclimateModbusMaster 1.2+" />
+  <depend on="bclimateModbusSlave 1.2+" />
+  <depend on="bclimateLib 1.2+" />
+  <depend on="bclimateLibNative 1.2+" />
+  <depend on="bclimateInOutGeneric 1.2+" />
+  <depend on="bclimateInOutMx6 1.2+" />
+  <depend on="bclimateSpi 1.2+" />
+  <depend on="bclimateSerialProtocol 1.2+" />
+  <depend on="bclimateUIConnect 1.2+" />
+  <depend on="bclimateSqlite 1.2+" />
+  <depend on="bclimateExpression 1.2+" />
+  <depend on="communityMQTT 1.2+" />
+
+  <!-- These replace control kit as of 1.2 -->
+  <depend on="func 1.2"    />
+  <depend on="hvac 1.2"    />
+  <depend on="logic 1.2"   />
+  <depend on="math 1.2"    />
+  <depend on="timing 1.2"  />
+  <depend on="types 1.2"   />
+  <depend on="pricomp 1.2" />
+
+</sedonaCode>

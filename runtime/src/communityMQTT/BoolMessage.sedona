@@ -1,0 +1,32 @@
+class BoolMessage extends Message
+{
+  property bool payload = false
+
+  override Str getPayload() 
+  {
+    Str s = null
+    if (payload == true)
+      s = "1"
+    else if (payload == false)
+      s = "0"
+    else
+      s = "2"
+    return s
+  }
+
+  override bool updateData(Obj handle) 
+  {
+    bool result = super.updateData(handle)
+    if (!result)
+      return result
+
+    if (strBuf.equals("true") || strBuf.equals("True") || strBuf.equals("TRUE") || strBuf.equals("1"))
+      payload := true
+    else if (strBuf.equals("false") || strBuf.equals("False") || strBuf.equals("FALSE") || strBuf.equals("0"))
+      payload := false
+    else
+      payload := null
+
+    return result
+  }
+}

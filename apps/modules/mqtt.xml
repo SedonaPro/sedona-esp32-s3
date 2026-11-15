@@ -1,0 +1,17 @@
+<module>
+  <!-- set host and autoStart=true to publish /play/adder.out to a broker -->
+  <kit name="communityMQTT"/>
+  <into path="service">
+    <comp name="mqtt" type="communityMQTT::MQTTService">
+      <comp name="pub" type="communityMQTT::Publisher">
+        <prop name="host" val="127.0.0.1"/>
+        <prop name="clientid" val="esp32sedona"/>
+        <prop name="autoStart" val="false"/>
+        <comp name="sum" type="communityMQTT::FloatMessage">
+          <prop name="topic" val="bclimate/esp32/sum"/>
+        </comp>
+      </comp>
+    </comp>
+  </into>
+  <link from="/play/adder.out" to="/service/mqtt/pub/sum.payload"/>
+</module>

@@ -1,0 +1,41 @@
+// Hey, emacs! -*- c++ -*-
+//
+// Copyright 2016 Andrey Skvortsov <andrej.skvortzov@gmail.com>
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+@palette=false
+class SerialPorts {
+	define int maxSerialPorts = 5;
+
+	define Str[maxSerialPorts] portNames = { "",
+				     "/dev/ttyUSB0",
+				     "/dev/ttyUSB1",
+				     "/dev/ttyO0",
+				     "/dev/ttyO4"
+	};
+
+	static int getMaxPortNum() {
+		return (maxSerialPorts - 1);
+	}
+
+	static void _sInit()
+	{
+		SerialInfoPlatform.setMaxPortNum(getMaxPortNum());
+		for(int i=0; i<SerialPorts.maxSerialPorts; i++)
+			SerialInfoPlatform.setPortName(i, portNames[i]);
+	}
+
+	static internal inline SerialPorts singlet;
+}

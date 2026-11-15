@@ -1,0 +1,108 @@
+// Hey, emacs! -*- c++ -*-
+//
+// Copyright 2016 Andrey Skvortsov <andrej.skvortzov@gmail.com>
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+@palette=false
+internal class GpioInputsInfo {
+
+	define int maxPins = 4;
+	define int[maxPins] pins = { 117, 115, 60, 61 };
+
+	static bool isNumCorrect(int num)
+	{
+		return ((num <= maxPins) && (num > 0));
+	}
+
+	static int getLowLevelNum(int num)
+	{
+		int ret;
+		if (isNumCorrect(num)) {
+			ret = pins[num - 1];
+		} else {
+			ret = 0;
+		}
+		return ret;
+	}
+}
+
+@palette=false
+internal class GpioOutputsInfo {
+
+	define int maxPins = 6;
+	define int[maxPins] pins = { 66, 69, 68, 67, 5, 48 };
+
+	static bool isNumCorrect(int num)
+	{
+		return ((num <= maxPins) && (num > 0));
+	}
+
+	static int getLowLevelNum(int num)
+	{
+		int ret;
+		if (isNumCorrect(num)) {
+			ret = pins[num - 1];
+		} else {
+			ret = 0;
+		}
+		return ret;
+	}
+}
+
+@palette=false
+internal class AnalogOutputsInfo {
+
+	define int maxPins = 1;
+	define int[maxPins] pins = { 1 };
+
+	static bool isNumCorrect(int num)
+	{
+		return ((num <= maxPins) && (num > 0));
+	}
+
+	static int getLowLevelNum(int num)
+	{
+		int ret;
+		if (isNumCorrect(num)) {
+			ret = pins[num - 1];
+		} else {
+			ret = 0;
+		}
+		return ret;
+	}
+}
+
+@palette=false
+internal class AnalogInputsInfo {
+
+	define int maxPins = 1;
+	define int[maxPins] pins = { 4 };
+
+	static bool isNumCorrect(int num)
+	{
+		return ((num <= maxPins) && (num > 0));
+	}
+
+	static int getLowLevelNum(int num)
+	{
+		int ret;
+		if (isNumCorrect(num)) {
+			ret = pins[num - 1];
+		} else {
+			ret = 0;
+		}
+		return ret;
+	}
+}

@@ -1,0 +1,34 @@
+# ignore files placed into bin by CPT tools
+bin/jre
+bin/hpi.dll
+bin/java.dll
+bin/jvm.dll
+bin/msvcr100.dll
+bin/net.dll
+bin/sedonac.exe.ORIG
+bin/verify.dll
+bin/zip.dll
+bin/svm
+
+# compiled python scripts
+*.pyc
+
+*.scode
+*.sab
+
+temp
+
+src/sedona/src/version.txt
+
+kits/
+manifests/
+lib/
+platforms/db
+scode/*.scode
+
+
+
+# Bclimate build outputs and local runs
+build/
+run/
+__pycache__/

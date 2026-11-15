@@ -1,0 +1,4 @@
+<module>
+  <kit name="bclimateLib"/>
+  <kit name="bclimateLibNative"/>
+</module>

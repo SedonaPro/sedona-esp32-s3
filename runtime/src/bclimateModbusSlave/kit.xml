@@ -1,0 +1,32 @@
+<sedonaKit
+    name="bclimateModbusSlave"
+    vendor="bclimate"
+    description="Bclimate Modbus Slave for RS485/232 and TCP/IP">
+  <depend on="sys 1.2+" />
+  <depend on="inet 1.2+" />
+  <depend on="bclimateLib 1.2+" />
+  <depend on="bclimateLibNative 1.2+" />
+
+  <native qname="bclimateModbusSlave::ModbusSlavePointBoolean.setData"                 id="103::0" />
+  <native qname="bclimateModbusSlave::ModbusSlavePointBoolean.getData"                 id="103::1" />
+  <native qname="bclimateModbusSlave::ModbusSlavePointNumeric.setData"                 id="103::2" />
+  <native qname="bclimateModbusSlave::ModbusSlavePointNumeric.getData"                 id="103::3" />
+
+  <native qname="bclimateModbusSlave::ModbusSlaveService.setSlaveAddr"                 id="103::10" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.setQuit"                      id="103::11" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.getStatus"                    id="103::12" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.getRequests"                  id="103::13" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.updateRegNumber"              id="103::14" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.setEnable"                    id="103::15" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.printInternalStateNative"     id="103::16" />
+  <native qname="bclimateModbusSlave::ModbusSlaveService.printInternalStateNativeAll"  id="103::17" />
+
+  <native qname="bclimateModbusSlave::ModbusSlaveTcpService.addSlaveService"           id="103::20" />
+  <native qname="bclimateModbusSlave::ModbusSlaveTcpService.updateTcpSettings"         id="103::21" />
+
+  <native qname="bclimateModbusSlave::ModbusSlaveSerialService.addSlaveService"        id="103::30" />
+  <native qname="bclimateModbusSlave::ModbusSlaveSerialService.updateSerialSettings"   id="103::31" />
+
+
+  <source dir="." />
+</sedonaKit>

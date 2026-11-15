@@ -1,0 +1,19 @@
+<!--
+  -  Sedona Kit: platform support for ESP32-S3 (ESP-IDF, FreeRTOS)
+  -->
+<sedonaKit
+ name = "bclimateEsp32"
+ vendor = "Bclimate"
+ description = "Platform support for ESP32 controllers (ESP-IDF)"
+ includeSource = "false"
+ doc = "true"
+>
+  <depend on="sys 1.2+" />
+
+  <source dir="."/>
+
+  <native qname="bclimateEsp32::Esp32PlatformService.rebootSystem"  id="110::0" />
+  <native qname="bclimateEsp32::Esp32PlatformService.heapMinFree"   id="110::1" />
+  <native qname="bclimateEsp32::Esp32PlatformService.uptimeSec"     id="110::2" />
+  <native qname="bclimateEsp32::Esp32PlatformService.chipResetReason"   id="110::3" />
+</sedonaKit>

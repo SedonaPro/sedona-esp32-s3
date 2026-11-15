@@ -1,0 +1,12 @@
+<module>
+  <kit name="bclimateUIConnect"/>
+  <into path="service">
+    <comp name="ui" type="bclimateUIConnect::UIConnectService">
+      <prop name="port" val="8088"/>
+      <comp name="sum" type="bclimateUIConnect::UIReadWritePointFloat">
+        <prop name="dataId" val="1"/>
+      </comp>
+    </comp>
+  </into>
+  <link from="/play/adder.out" to="/service/ui/sum.val"/>
+</module>

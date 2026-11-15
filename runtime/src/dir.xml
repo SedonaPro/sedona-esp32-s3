@@ -1,0 +1,71 @@
+<!--
+  -  Sedona Dir
+  -  Copyright (c) 2007 Tridium, Inc.
+  -  Licensed under the Academic Free License version 3.0
+  -->
+
+<sedonaDir>
+
+  <!-- Children Kits -->
+  <target name="sys" />
+  <target name="inet" />
+  <target name="sox" />
+  <target name="soxcert" />
+  <target name="serial" />
+  <target name="web" />
+  <target name="control" />
+  <target name="driver" />
+  <target name="datetime" />
+  <target name="datetimeStd" />
+  <target name="basicSchedule" />
+  <target name="pstore" />
+  <target name="logManager" />
+  <target name="bclimateLib" />
+  <target name="bclimateLibNative" />  
+  <target name="bclimateInOutGeneric" />
+  <target name="bclimateInOutBBB" />
+  <target name="bclimateInOutMx6" />  
+  <target name="bclimateInOutWecon" />
+  <target name="bclimateInOutUnix" />
+  <target name="bclimateMath" />
+  <target name="bclimateModbusMaster" />
+  <target name="bclimateModbusSlave" />    
+  <target name="bclimateSerialProtocol" />    
+  <target name="bclimateSpi" />
+  <target name="bclimateUIConnect" />
+  <target name="bclimateSqlite" />
+  <target name="bclimateExpression" />
+  <target name="tutorial" />
+  <target name="communityMQTT" />
+  
+  <!-- platform kits -->
+  <target name="../platforms/src/generic/win32" />
+  <target name="../platforms/src/generic/unix" />
+  <target name="../platforms/src/bclimate/unix" />
+
+  <!-- modular versions of the control kit -->
+  <target name="types" />
+  <target name="func" />
+  <target name="hvac" />
+  <target name="logic" />
+  <target name="math" />
+  <target name="timing" />
+  <target name="pricomp" />
+
+  <!-- scode -->
+  <target name="../scode/platUnix.xml" />
+  <target name="../scode/platWin32.xml" />
+  <target name="../scode/x86-test.xml" />
+  <target name="../scode/bclimateDefaultKits_unix.xml" />
+  <target name="../scode/bclimateDefaultKits_okmx6dl.xml" />
+  <target name="../scode/bclimateDefaultKits_Wecon_PI8070.xml" />
+  <target name="../scode/bclimateDefaultKits_BBB.xml" />
+
+  <!-- applications -->
+  <target name="tutorialApp" />
+  <target name="../apps/bclimateDefaultApp.sax" />
+  <target name="../apps/platUnix.sax" />
+  <target name="../apps/platWin32.sax" />
+  <target name="../apps/test.sax" />
+
+</sedonaDir>
